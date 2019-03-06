@@ -12,3 +12,15 @@ const menuButton = document.querySelector('.menu-button');
 
 // Using your menuButton reference, add a click handler that calls toggleMenu
 menuButton.addEventListener('click', toggleMenu);
+
+// Get .articles and header h1
+const nonHeaderBody = document.querySelector('.articles');
+const headerH1 = document.querySelector('.header h1');
+
+// Remove Menu--open class
+nonHeaderBody.addEventListener('click', function () {
+  menu.classList.remove('menu--open');
+});
+headerH1.addEventListener('click', function () {
+  menu.classList.remove('menu--open');
+});
