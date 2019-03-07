@@ -85,7 +85,7 @@
   height: 50px;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
-  transition: height 3s ease-in-out 0s;
+  transition: height 3s ease 0s;
 }
 .article h2 {
   font-size: 28px;
@@ -109,13 +109,29 @@
   color: grey;
   cursor: pointer;
   transform: translate(-50%);
-  transition: font-size 0.5s linear 0s;
+  transition: font-size 0.5s ease 0s;
 }
 .article .expandButton:hover {
   font-size: 18px;
 }
+.article .markRead {
+  color: grey;
+  font-size: 12px;
+  text-align: right;
+  top: 0;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  transition: color 1s ease 0s;
+}
+.article .markRead:hover {
+  color: black;
+}
 .article-open {
   height: 400px;
+}
+.clearFirst {
+  display: none;
 }
 html,
 body {
