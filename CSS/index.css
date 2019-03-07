@@ -35,6 +35,104 @@
   margin: 0;
   font-size: 48px;
 }
+.menu-button {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: fixed;
+  top: 75px;
+  left: -350px;
+  width: 350px;
+  height: 100%;
+  background-color: #81C784;
+  border: 1px solid #004D40;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+  transition: left 2s ease-in-out 0s;
+  /* This set the layer level of the element, it has precendence over initial level of 1*/
+}
+.menu ul li {
+  list-style-type: none;
+  font-size: 32px;
+  padding: 22.5px 0;
+  text-align: center;
+  width: 100%;
+  transition: color 1s ease-out 0s;
+}
+.menu ul li:hover {
+  color: #88C744;
+  cursor: pointer;
+}
+.menu--open {
+  left: 0px;
+}
+.articles {
+  margin-top: 95px;
+}
+.article {
+  margin: 20px 10%;
+  padding: 0 20px 25px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px lightgrey;
+  transition: height 3s ease 0s;
+}
+.article h2 {
+  font-size: 28px;
+  padding: 0;
+  margin: 15px 0 0;
+}
+.article .date {
+  margin: 0;
+  font-size: 14px;
+}
+.article .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.article .expandButton {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 12px;
+  color: grey;
+  cursor: pointer;
+  transform: translate(-50%);
+  transition: font-size 0.5s ease 0s;
+}
+.article .expandButton:hover {
+  font-size: 18px;
+}
+.article .markRead {
+  color: grey;
+  font-size: 12px;
+  text-align: right;
+  top: 0;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  transition: color 1s ease 0s;
+}
+.article .markRead:hover {
+  color: black;
+}
+.article-open {
+  height: 400px;
+}
+.clearFirst {
+  display: none;
+}
 html,
 body {
   margin: 0;
